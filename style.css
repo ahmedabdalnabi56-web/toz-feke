@@ -27,8 +27,7 @@ body{
   height: 320px;
 }
 .open .ico{
-  -webkit-animation: open 4s;
-          animation: open 4s;
+  animation: open 4s;
   transform: scale(10);
 }
 .ico .title{
@@ -78,18 +77,15 @@ body{
   z-index: 3;
 }
 .ico:after{
-  -webkit-animation: explode 4s infinite;
-          animation: explode 4s infinite;
+  animation: explode 4s infinite;
 }
 
 
 .ico2:before{
-  -webkit-animation: explodeSmall 3s infinite;
-          animation: explodeSmall 3s infinite;
+  animation: explodeSmall 3s infinite;
 }
 .ico2:after{
-  -webkit-animation: explodeSmall 2s infinite;
-          animation: explodeSmall 2s infinite;
+  animation: explodeSmall 2s infinite;
 }
 
 
@@ -102,8 +98,7 @@ body{
 .open .endtext{
   top:0;
   opacity: 1;
-  -webkit-animation: show 5s;
-          animation: show 5s;
+  animation: show 5s;
 }
 .endtext .close{
   position: absolute;
@@ -130,18 +125,6 @@ body{
 }
 
 
-@-webkit-keyframes explode {
-    from {
-      transform: scale(1);
-      opacity: 1;
-    }
-    to {
-      transform: scale(1.6);
-      opacity: 0;
-    }
-}
-
-
 @keyframes explode {
     from {
       transform: scale(1);
@@ -149,16 +132,6 @@ body{
     }
     to {
       transform: scale(1.6);
-      opacity: 0;
-    }
-}
-@-webkit-keyframes explodeSmall {
-    from {
-      transform: scale(1);
-      opacity: 1;
-    }
-    to {
-      transform: scale(1.2);
       opacity: 0;
     }
 }
@@ -174,33 +147,12 @@ body{
 }
 
 
-@-webkit-keyframes open {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(10);
-    }
-}
-
-
 @keyframes open {
     from {
       transform: scale(1);
     }
     to {
       transform: scale(10);
-    }
-}
-
-@-webkit-keyframes show {
-    from {
-      opacity: 0;
-      top: -100px;
-    }
-    to {
-      opacity: 1;
-      top:0;
     }
 }
 
